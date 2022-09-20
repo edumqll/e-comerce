@@ -1,0 +1,20 @@
+//Instalacion de tailwind
+
+npm install -D tailwindcss
+
+//iniciar tailwind
+
+npx tailwindcss init
+
+//Crear el archivo input
+
+src/input.css
+
+//Contenido del archivo
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+//compilar
+
+npx tailwindcss-cli -i ./src/input.css -o ./public/dist/output.css --watch
