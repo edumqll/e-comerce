@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <script src="https://cdn.tailwindcss.com"></script>
     <meta charset="UTF-8">
@@ -7,7 +8,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
+
+    <nav class="p-3 bg-gray-50 rounded border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+        <div class="container flex flex-wrap justify-between items-center mx-auto">
+            <a href="#" class="flex items-center">
+                <img src="./src/images/reloj.png" class="mr-3 h-6 sm:h-10" alt="Breitling E-comerce" />
+                <span class="self-center text-3xl font-semibold whitespace-nowrap dark:text-white">Breitling E-comerce</span>
+            </a>
+
+
+            <button data-collapse-toggle="navbar-solid-bg" type="button" class="inline-flex justify-center items-center ml-3 text-gray-400 rounded-lg md:hidden hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300 dark:text-gray-400 dark:hover:text-white dark:focus:ring-gray-500"
+                aria-controls="navbar-solid-bg" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+          </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
+                <ul class="flex flex-col mt-4 bg-gray-50 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
+                    <li>
+                        <a href="#" class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="./src/pages/login.html" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Iniciar Sesion</a>
+                    </li>
+                    <li>
+                        <a href="./src/pages/form.html" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Registrarse</a>
+                    </li>
+                    <li>
+                        <a href="./src/pages/wishes.html" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Mis deseos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
     <div class="font-sans">
         <div class="relative min-h-screen flex flex-col sm:justify-center items-center bg-gray-100 ">
             <div class="relative sm:max-w-sm w-full">
@@ -18,53 +55,53 @@
                         Registrate
                     </label>
                     <form method="#" action="#" class="mt-10">
-                                        
+
                         <div>
                             <input type="text" placeholder="Nombres" class="mt-1 block w-full border-none bg-gray-100 h-11 rounded-xl shadow-lg hover:bg-blue-100 focus:bg-blue-100 focus:ring-0">
                         </div>
-            
-                        <div class="mt-7">                
-                            <input type="email" placeholder="Correo electronico" class="mt-1 block w-full border-none bg-gray-100 h-11 rounded-xl shadow-lg hover:bg-blue-100 focus:bg-blue-100 focus:ring-0">                           
+
+                        <div class="mt-7">
+                            <input type="email" placeholder="Correo electronico" class="mt-1 block w-full border-none bg-gray-100 h-11 rounded-xl shadow-lg hover:bg-blue-100 focus:bg-blue-100 focus:ring-0">
                         </div>
-    
-                        <div class="mt-7">                
-                            <input type="password" placeholder="Contraseña" class="mt-1 block w-full border-none bg-gray-100 h-11 rounded-xl shadow-lg hover:bg-blue-100 focus:bg-blue-100 focus:ring-0">                           
+
+                        <div class="mt-7">
+                            <input type="password" placeholder="Contraseña" class="mt-1 block w-full border-none bg-gray-100 h-11 rounded-xl shadow-lg hover:bg-blue-100 focus:bg-blue-100 focus:ring-0">
                         </div>
-    
-                        <div class="mt-7">                
-                            <input type="password" placeholder="Confirmar contraseña" class="mt-1 block w-full border-none bg-gray-100 h-11 rounded-xl shadow-lg hover:bg-blue-100 focus:bg-blue-100 focus:ring-0">                           
+
+                        <div class="mt-7">
+                            <input type="password" placeholder="Confirmar contraseña" class="mt-1 block w-full border-none bg-gray-100 h-11 rounded-xl shadow-lg hover:bg-blue-100 focus:bg-blue-100 focus:ring-0">
                         </div>
-    
-                        
-            
+
+
+
                         <div class="mt-7">
                             <button class="bg-blue-500 w-full py-3 rounded-xl text-white shadow-xl hover:shadow-inner focus:outline-none transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-105">
                                 Registrar
                             </button>
                         </div>
-            
+
                         <div class="flex mt-7 items-center text-center">
                             <hr class="border-gray-300 border-1 w-full rounded-md">
-                            
+
                             </label>
                             <hr class="border-gray-300 border-1 w-full rounded-md">
                         </div>
-            
+
                         <div class="flex mt-7 justify-center w-full">
                             <a href="../../index.html" class="mr-5 bg-blue-500 border-none px-4 py-2 rounded-xl cursor-pointer text-white shadow-xl hover:shadow-inner transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-105">
                                 
                                 Home
                             </a>
-            
+
                             <a href="../../pages/login.html" class="bg-red-500 border-none px-4 py-2 rounded-xl cursor-pointer text-white shadow-xl hover:shadow-inner transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-105">
                                 
                                 Iniciar Sesion
                             </a>
                         </div>
-            
+
                         <div class="mt-7">
                             <div class="flex justify-center items-center">
-                                <label class="mr-2" >¿Ya tienes una cuenta?</label>
+                                <label class="mr-2">¿Ya tienes una cuenta?</label>
                                 <a href="#" class=" text-blue-500 transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-105">
                                     Iniciar sesion
                                 </a>
@@ -74,6 +111,7 @@
                 </div>
             </div>
         </div>
-    </div>   
+    </div>
 </body>
+
 </html>
